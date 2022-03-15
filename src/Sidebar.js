@@ -17,27 +17,27 @@ function Sidebar() {
             <SidebarRow
                 src={user.photoURL}
                 title={user.displayName} />
-            <SidebarRow
+            {/* <SidebarRow
                 Icon={LocalHospitalIcon}
-                title="COVID-19 Information Center" />
-            <SidebarRow
+                title="COVID-19 Information Center" /> */}
+            {/* <SidebarRow
                 Icon={EmojiFlagsIcon}
                 title="Pages" />
             <SidebarRow
                 Icon={PeopleIcon}
-                title="Friends" />
+                title="Friends" /> */}
             <SidebarRow
                 Icon={ChatIcon}
-                title="Messenger" />
-            <SidebarRow
+                title="My Reviews" />
+            {/* <SidebarRow
                 Icon={StorefrontIcon}
-                title="Marketplace" />
-            <SidebarRow
+                title="My Hotels" /> */}
+            {/* <SidebarRow
                 Icon={VideoLibraryIcon}
-                title="Videos" />
+                title="Videos" /> */}
             <SidebarRow
                 Icon={ExpandMoreOutlined}
-                title="Marketplace" />
+                title="More" />
 
         </div>
     )

@@ -8,6 +8,8 @@ import { useStateValue } from "./StateProvider";
 import db from './firebase';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import 'firebase/compat/firestore';
 
 function MessageSender() {
@@ -38,7 +40,7 @@ function MessageSender() {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         className='messageSender__input'
-                        placeholder={`What's on your mind, ${user.displayName}?`}
+                        placeholder={`Write a review or recipe, ${user.displayName}?`}
                     />
                     <input
                         value={imageURL}
@@ -53,16 +55,17 @@ function MessageSender() {
             </div>
             <div className='messageSender__bottom'>
                 <div className='messageSender__option'>
-                    <VideocamIcon style={{ color: "red" }} />
-                    <h3>Live Video</h3>
+                    <LocationOnIcon style={{ color: "red" }} />
+                    <h3>Location</h3>
+
                 </div>
-                <div className='messageSender__option'>
+                {/* <div className='messageSender__option'>
                     <PhotoLibraryIcon style={{ color: "green" }} />
                     <h3>Photo/Video</h3>
-                </div>
+                </div> */}
                 <div className='messageSender__option'>
-                    <InsertEmoticonIcon style={{ color: "orange" }} />
-                    <h3>Feeling/Activity</h3>
+                    <LocalDiningIcon style={{ color: "orange" }} />
+                    <h3>Activity</h3>
                 </div>
             </div>
         </div>

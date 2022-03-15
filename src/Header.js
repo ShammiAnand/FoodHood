@@ -10,6 +10,8 @@ import AddIcon from "@mui/icons-material/Add";
 import ForumIcon from "@mui/icons-material/Forum";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import MenuBookSharpIcon from '@mui/icons-material/MenuBookSharp';
+import RestaurantSharpIcon from '@mui/icons-material/RestaurantSharp';
 import "./Header.css"
 import { useStateValue } from "./StateProvider"
 
@@ -19,7 +21,7 @@ function Header() {
         <div className='header'>
             <div className='header__left'>
                 <img
-                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1024px-2021_Facebook_icon.svg.png'
+                    src='tlogo.png'
                     alt='company logo'
                 />
                 <div className='header__input'>
@@ -31,14 +33,14 @@ function Header() {
                 <div className='header__option header__option--active'>
                     <HomeIcon fontSize='large' />
                 </div>
-                <div className='header__option'>
+                {/* <div className='header__option'>
                     <FlagIcon fontSize='large' />
+                </div> */}
+                <div className='header__option'>
+                    <MenuBookSharpIcon fontSize='large' />
                 </div>
                 <div className='header__option'>
-                    <SubscriptionsOutlinedIcon fontSize='large' />
-                </div>
-                <div className='header__option'>
-                    <StorefrontOutlinedIcon fontSize='large' />
+                    <RestaurantSharpIcon fontSize='large' />
                 </div>
                 <div className='header__option'>
                     <SupervisedUserCircleIcon fontSize='large' />
@@ -50,15 +52,15 @@ function Header() {
                     <Avatar src={user.photoURL} />
                     <h4>{user.displayName}</h4>
                 </div>
-                <IconButton>
+                {/* <IconButton>
                     <AddIcon />
-                </IconButton>
+                </IconButton> */}
                 <IconButton>
                     <ForumIcon />
                 </IconButton>
-                <IconButton>
+                {/* <IconButton>
                     <NotificationsActiveIcon />
-                </IconButton>
+                </IconButton> */}
                 <IconButton>
                     <ExpandMoreIcon />
                 </IconButton>
